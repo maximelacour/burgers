@@ -1,0 +1,17 @@
+import sys
+
+print("Inscrivez un entier :")
+try:    
+    a = int(input())
+except ValueError:
+    print("Vous n'avez pas rentré un entier. Le programme est interrompu.")
+    sys.exit()
+print("Inscrivez un second entier :")
+try:    
+    b = int(input())
+except ValueError:
+    print("Vous n'avez pas rentré un entier. Le programme est interrompu.")
+    sys.exit()
+
+print("L'addition de ces deux nombre donne :")
+print(a+b)
